@@ -261,18 +261,19 @@ gap: 40px;
 margin-bottom: 48px;
 }
 .mobile-contact-info-email {
-font-weight: 700;
-font-size: 36px;
-line-height: 1.11px;
-letter-spacing: 0.02em;
-text-transform: capitalize;
-}
-.mobile-contact-info-tel {
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #434455;
+}
+.mobile-contact-info-tel {
+
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11px;
+letter-spacing: 0.02em;
+text-transform: capitalize;
 }
 .mobile-social-list {
     display: flex;
