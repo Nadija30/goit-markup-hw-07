@@ -56,13 +56,34 @@ overflow: hidden;
 .link {
     text-decoration: none;
 }
-.container {
+/*.container {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}*/
+.container {
+padding-left: 15px;
+padding-right: 15px;
 }
-.section {
+@media screen and (min-width: 428px) {
+    .container {
+        width: 426px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        width: 766px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1158px;
+    }
+}
+/*.section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -85,7 +106,36 @@ margin-bottom: 0;
 }
 /* ==========/Components =========*/
 /* ========== Header =========*/
+@media screen and (max-width: 767px) {
+.menu {
+    display: none;
+    }
+.page-address {
+display: none;
+     }
+}
+.page-header-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
 .page-header {
+padding-top: 24px;
+padding-bottom: 24px;
+}
+.mobile-menu-open {
+background-color: var(--color-white);
+padding: 0;
+border: none;
+line-height: 0;
+}
+.mobile-menu-open-icon {  
+stroke: #2E2F42;
+}
+.mobile-menu-container {
+    position: relative;
+}
+/*.page-header {
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #E7E9FC;
@@ -161,12 +211,35 @@ transition: color var(--transition-duration-and-func);
 .contact-info:hover,
 .contact-info:focus {
  color: var(--color-ocean);
+}*/
+.mobile-menu-btn {
+position: fixed;
+height: 100%;
+width: 100%;
+background-color:aqua;
+top: 0;
+left: 0;
 }
-
+.mobile-menu-close-btn {
+position: absolute;
+top: 24px;
+right: 24px;
+border-radius: 50%;
+width: 24px;
+height: 24px;
+padding: 0;
+border: 0;
+background: #E7E9FC;
+border: 1px solid #2E2F42;
+line-height: 0;
+}
+.mobile-menu-container {
+    position: relative;
+}
 /* ========== /Header =========*/
 /* ========== Hero =========*/
 
-.hero {
+/*.hero {
 background-color: #2e2f42;
 padding-top: 188px;
 padding-bottom: 188px;
@@ -212,7 +285,7 @@ background-color: #404BBF;
 /* ========== /Hero =========*/
 
 /* ========== Solutions =========*/
-.solutions-list {
+/*.solutions-list {
 display: flex;
 flex-wrap: wrap;
 gap: 24px;
@@ -250,7 +323,7 @@ letter-spacing: 0.02em;
 /* ========== /Solutions =========*/
 
 /* ========== Our-solutions =========*/
-.our-solutions-list {
+/*.our-solutions-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -275,7 +348,7 @@ margin-bottom: 72px;
 /* ========== /Our-solutions =========*/
 
 /* ========== Our-team =========*/
-.our-team-list {
+/*.our-team-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -345,7 +418,7 @@ fill: #f4f4fd;
 
 /* ========== /Our-team =========*/
 /* ========== Our-Customers=========*/
-.customers-title {
+/*.customers-title {
 font-size: 36px;
 font-weight: 700;
 line-height: 1.11;
@@ -386,7 +459,7 @@ fill: #404BBF;
 
 /* ========== /Our-Customers=========*/
 /* ========== Page-footer=========*/
-.page-footer {
+/*.page-footer {
 display: flex;
 background-color: #2e2f42;
 padding-top: 100px;
@@ -523,7 +596,7 @@ fill: #FFFFFF;
 /* ========== /Page-footer=========*/
 
 /*============ Modal vikno======== */
-.backdrop {
+/*.backdrop {
 position: fixed;
 top: 0;
 left: 0;
@@ -586,7 +659,7 @@ fill: var(--color-white);
 }
 /*============ /Modal vikno======== */
 /*============ Modal form======== */
-.modal-text {
+/*.modal-text {
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -724,7 +797,7 @@ color: #4D5AE5;
 
 /*============ /Modal form======== */
 /*========== Portfolio======*/
-.cards {
+/*.cards {
 padding-top: 96px;
 padding-bottom: 120px;
 }
