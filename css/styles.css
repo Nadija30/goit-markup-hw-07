@@ -882,7 +882,7 @@ fill: #404BBF;
 
 /* ========== /Our-Customers=========*/
 /* ========== Page-footer=========*/
-/*.page-footer {
+.page-footer {
 display: flex;
 background-color: #2e2f42;
 padding-top: 100px;
