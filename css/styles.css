@@ -161,6 +161,7 @@ display: none;
      position: relative;
      height: 100%;
  }
+
 }
 .page-header-container {
 display: flex;
@@ -405,8 +406,13 @@ line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: #2E2F42;
+transition: color var(--transition-duration-and-func);
     }
-
+ 
+ .mobile-menu-link:hover,
+ .mobile-menu-link:focus {
+     color: var(--color-ocean);
+ }
     .mobile-contact {
 display: flex;
 flex-direction: column;
