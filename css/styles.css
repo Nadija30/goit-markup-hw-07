@@ -431,7 +431,8 @@ color: #434455;
     .mobile-contact-info-tel {
 
 font-weight: 700;
-font-size: 36px;
+font-size: 24px;
+/*font-size: 36px;*/
 line-height: 1.11px;
 letter-spacing: 0.02em;
 text-transform: capitalize;
@@ -462,6 +463,11 @@ fill: var(--color-cloud);
 background-color: #404BBF;
     }
 }
+@media screen and (min-width: 428px){
+    .mobile-contact-info-tel {
+    font-size: 36px;
+    }
+}
 @media screen and (min-width: 768px) {
 .mobile-menu-btn {
 display: none;
@@ -470,6 +476,7 @@ display: none;
 
 /* ========== /Header =========*/
 /* ========== Hero =========*/
+
 .hero {
     background-color: #2e2f42;
     padding-top: 112px;
@@ -494,7 +501,30 @@ padding-bottom: 188px;*/
                 url("../images/hero/dark-bg_mob_2x.jpg");
     }
 }
-@media screen and (min-width: 480px) {
+
+.main-title {
+    font-weight: 700;
+    width: 320px;
+    /*width: 496px;*/
+    font-size: 36px;
+    line-height: 1.11;
+    /*font-size: 56px;*/
+    /*line-height: 1.07;*/
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--color-white);
+    margin-bottom: 72px;
+    /*margin-bottom: 48px;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width: 427px) {
+    .main-title {
+        font-size: 20px;
+        line-height: 1.11;
+    }
+}
+@media screen and (min-width: 428px) {
     .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url("../images/hero/dark_bg_tab_1х.jpg");
@@ -544,22 +574,6 @@ margin-bottom: 48px;
 }
 }
 
-.main-title {
-font-weight: 700;
-width: 320px;
-/*width: 496px;*/
-font-size: 36px;
-line-height: 1.11;
-/*font-size: 56px;*/
-/*line-height: 1.07;*/
-letter-spacing: 0.02em;
-text-align: center;
-color: var(--color-white);
-margin-bottom: 72px;
-/*margin-bottom: 48px;*/
-margin-left: auto;
-margin-right: auto;
-}
 
 .modal-btn {
 font-family: 'Roboto', sans-serif;
