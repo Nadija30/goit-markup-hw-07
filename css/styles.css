@@ -378,7 +378,10 @@ border: 1px solid (0,0,0,0.1);
 line-height: 0;
     }
 
-    .mobile-menu-container {        
+    .mobile-menu-container {   
+display: flex;
+flex-direction: column;
+justify-content: space-between;     
 position: relative;
 padding-top: 80px;
 padding-left: 40px;
@@ -390,7 +393,7 @@ padding-bottom: 40px;
 display: flex;
 flex-direction: column;
 gap: 40px;
-margin-bottom: 284px;
+/*margin-bottom: 284px;*/
     }
 
     .mobile-menu-link {
@@ -947,22 +950,29 @@ fill: #404BBF;
 
 /* ========== /Our-Customers=========*/
 /* ========== Page-footer=========*/
+
 .page-footer {
 display: flex;
 background-color: #2e2f42;
-padding-top: 100px;
-padding-bottom: 100px;
+padding-top: 96px;
+padding-bottom: 96px;
+/*padding-top: 100px;
+padding-bottom: 100px;*/
 }
 .page-footer-container {
 display: flex;
+flex-direction: column;
 }
 .page-footer-logo {
 display: flex;
 flex-direction: column;
-margin-right: 120px;
+align-items: center;
+margin-bottom: 72px;
+/*margin-right: 120px;*/
 }
 
 .footer-logo {
+margin: 0 auto;
 display: block;
 margin-bottom: 16px;
 }
@@ -975,16 +985,18 @@ color: var(--color-cloud);
 width: 264px;
 }
 .logo-span-footer{
-
 color: var(--color-cloud);
 }
 .media {
 display: flex;
 flex-direction: column; 
-margin-right: 80px; 
+align-items: center;
+margin-bottom: 72px;
+/*margin-right: 80px; */
 }
 .media-list {
 display: flex;
+justify-content:flex-start;
 justify-content: center;
 gap: 16px;
 }
@@ -1017,6 +1029,7 @@ background-color: #31D0AA;
 .subscribe {
 display: flex;
 flex-direction: column;
+align-items: center;
 }
 .subscribe-text {
 font-weight: 500;
@@ -1029,11 +1042,14 @@ margin-bottom: 16px;
 
 .subscribe-form {
 display: flex;
+flex-direction: column;
+align-items: center;
 gap: 24px;
 }
 
 .subscribe-form-input {
-width: 264px;
+width: 398px;
+/*width: 264px;*/
 height: 40px;
 border: 1px solid #FFFFFF;
 border-radius: 4px;
@@ -1079,7 +1095,55 @@ background-color: #404BBF;
 .subscribe-svg {
 fill: #FFFFFF;
 }
+@media screen and (min-width:768px) {
+    .page-footer>.container {
+        width: 582px;
+    }
+.page-footer-container {
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap:72px 24px;
+}
+.page-footer-logo {
+    margin-bottom: 0;
+}
+.footer-logo {
+margin-left: 0;
 
+}
+.media {
+    align-items: flex-start;
+    margin-bottom: 0;
+}
+.subscribe {
+    align-items: flex-start;
+}
+.subscribe-form {
+    flex-direction: row;
+}
+.subscribe-form-input {
+    width: 264px;
+}
+}
+
+@media screen and (min-width:1200px) {
+    .page-footer>.container {
+        width: 1158px;
+    }
+.page-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.page-footer-logo {
+    margin-right: 120px;
+}
+.page-footer-container {
+    gap:0;
+}
+.media {
+    margin-right: 80px;
+}
+}
 
 /* ========== /Page-footer=========*/
 
