@@ -433,14 +433,14 @@ color: #434455;
 font-weight: 700;
 font-size: 24px;
 /*font-size: 36px;*/
-line-height: 1.11px;
+line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
     }
 
     .mobile-social-list {
 display: flex;
-gap: 56px;
+gap: 35px;
 justify-content: flex-start;
     }
 
@@ -467,6 +467,9 @@ background-color: #404BBF;
     .mobile-contact-info-tel {
     font-size: 36px;
     }
+.mobile-social-list {
+    gap: 56px;
+}
 }
 @media screen and (min-width: 768px) {
 .mobile-menu-btn {
@@ -504,7 +507,7 @@ padding-bottom: 188px;*/
 
 .main-title {
     font-weight: 700;
-    width: 320px;
+    width: 100%;
     /*width: 496px;*/
     font-size: 36px;
     line-height: 1.11;
@@ -518,12 +521,7 @@ padding-bottom: 188px;*/
     margin-left: auto;
     margin-right: auto;
 }
-@media screen and (max-width: 427px) {
-    .main-title {
-        font-size: 20px;
-        line-height: 1.11;
-    }
-}
+
 @media screen and (min-width: 428px) {
     .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -537,6 +535,9 @@ padding-bottom: 188px;*/
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url("../images/hero/dark_bg_tab_2х.jpg");
     }
+}
+.main-title {
+width: 320px;
 }
 }
 @media screen and (min-width: 768px) {
