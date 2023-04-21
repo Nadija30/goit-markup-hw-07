@@ -159,6 +159,7 @@ display: none;
 
  .mobile-menu-container {
      position: relative;
+     height: 100%;
  }
 }
 .page-header-container {
@@ -1045,10 +1046,11 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 24px;
+width: 100%;
 }
 
 .subscribe-form-input {
-width: 398px;
+width: 100%;
 /*width: 264px;*/
 height: 40px;
 border: 1px solid #FFFFFF;
