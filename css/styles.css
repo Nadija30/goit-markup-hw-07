@@ -1171,7 +1171,7 @@ margin-left: 0;
 /* ========== /Page-footer=========*/
 
 /*============ Modal vikno======== */
-/*.backdrop {
+.backdrop {
 position: fixed;
 top: 0;
 left: 0;
@@ -1194,8 +1194,10 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-width: 408px;
-height: 576px;
+width: 100%;
+
+/*width: 408px;*/
+height: 630px;
 background-color: #FCFCFC;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
@@ -1232,9 +1234,17 @@ background-color: #404BBF;
 .modal-close-btn:focus>.modal-close-btn-icon {
 fill: var(--color-white);
 }
+@media screen and (min-width:428px) {
+    .modal {
+width: 408px;
+height: 576px;
+    }
+
+}
+
 /*============ /Modal vikno======== */
 /*============ Modal form======== */
-/*.modal-text {
+.modal-text {
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -1372,7 +1382,7 @@ color: #4D5AE5;
 
 /*============ /Modal form======== */
 /*========== Portfolio======*/
-/*.cards {
+.cards {
 padding-top: 96px;
 padding-bottom: 120px;
 }
