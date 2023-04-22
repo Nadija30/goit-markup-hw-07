@@ -348,7 +348,7 @@ height: 100%;
 max-height: 796px;
 width: 100%;
 z-index: 1000;
-background-color: var(--color-cloud);
+background-color: var(--color-white);
 box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 top: 0;
 left: 0;
@@ -668,7 +668,7 @@ gap:72px 24px;
     }
 
     .description-solutions {
-        font-weight: 500;
+        font-weight: 400;
 
     }
 }
