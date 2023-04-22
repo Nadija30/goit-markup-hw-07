@@ -775,6 +775,7 @@ margin-bottom: 72px;
     .our-team-list {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             gap: 72px;
         }
 }
@@ -830,7 +831,7 @@ background-color: var(--color-white);
 text-align: center;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
-width: 100%;
+/*width: 100%;*/
 }
 .name {
 font-weight: 500;
