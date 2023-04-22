@@ -1,48 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-<header class="page-header">
-    <div class="container page-header-container">
-        <nav class="page-nav list">
-            <a class="logo link" href="./index.html">Web<span class="logo-span">Studio</span></a>
-            <ul class="menu list">
-                <li class="menu-item">
-                    <a class="menu-link  link" href="./index.html">Studio</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link activ-portfolio link" href="./portfolio.html">Portfolio</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link link" href="">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-        <address class="page-address">
-            <ul class="contact list">
-                <li class="page-address-contact">
-                    <a class="contact-info link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li class="page-address-contact">
-                    <a class="contact-info link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                </li>
-            </ul>
-        </address>
-    </div>
-</header>
+    <header class="page-header">
+        <div class="container page-header-container">
+            <nav class="page-nav list">
+                <a class="logo link" href="./index.html">Web<span class="logo-span">Studio</span></a>
+                <ul class="menu list">
+                    <li class="menu-item">
+                        <a class="menu-link activ-studio link" href="./index.html">Studio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link  link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link  link" href="">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" class="mobile-menu-open " data-menu-open>
+                <svg class="mobile-menu-open-icon" width="32" height="22">
+                    <use href="./images/icons.svg#icon-icon-burger"></use>
+                </svg>
+            </button>
+            <address class="page-address">
+                <ul class="contact list">
+                    <li class="page-address-contact">
+                        <a class="contact-info link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="page-address-contact">
+                        <a class="contact-info link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+        <div class="mobile-menu-btn " data-menu>
+            <div class="container mobile-menu-container">
+                <div>
+                    <button class="mobile-menu-close-btn " data-menu-close>
+                        <svg class=".mobile-menu-close-icon" width="8" height="8">
+                            <use href="./images/icons.svg#icon-close-modal"></use>
+                        </svg>
+                    </button>
+                    <nav class="mobile-nav list">
+                        <ul class="mobile-menu list">
+                            <li class="mobile-menu-item">
+                                <a class="mobile-menu-link  link" href="./index.html">Studio</a>
+                            </li>
+                            <li class="mobile-menu-item">
+                                <a class="mobile-menu-link  link" href="./portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="mobile-menu-item">
+                                <a class="mobile-menu-link activ-contacts link" href="">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <address class="mobile-page-address">
+                        <ul class="mobile-contact list">
+                            <li class="mobile-page-address-contact">
+                                <a class="mobile-contact-info-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                            </li>
+                            <li class="mobile-page-address-contact">
+                                <a class="mobile-contact-info-email link"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <ul class="mobile-social-list list">
+                        <li class="mobile-social-list-item">
+                            <a href="" class="mobile-social-list-link">
+                                <svg class="mobile-social-list-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-social-list-item">
+                            <a href="" class="mobile-social-list-link">
+                                <svg class="mobile-social-list-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-social-list-item">
+                            <a href="" class="mobile-social-list-link">
+                                <svg class="mobile-social-list-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-social-list-item">
+                            <a href="" class="mobile-social-list-link">
+                                <svg class="mobile-social-list-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
 <main>
 <section class="cards">
    <div class="container">
@@ -58,7 +133,20 @@
         <li class="gallery link">
             <a class="gallery-card link" href="">
                 <div class="gallery-card-img-wrapper">
-                    <img src="./images/portfolio_1/banking_app.jpg" alt="Banking applications" width="360" height="300">
+                    <picture>
+                        <source srcset="./images/portfolio_1/banking_app.jpg 1x, 
+                        ./images/portfolio_1/banking_app_2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <source srcset="./images/portfolio_1/tab/banking_app_tab_1x.jpg 1x, 
+                        ./images/portfolio_1/tab/banking_app_tab_2x.jpg 2x"
+                        media="(min-width: 768px)">
+                        <source srcset="./images/portfolio_1/mob/banking_app_mob_1x.jpg 1x, 
+                        ./images/portfolio_1/mob/banking_app_mob_2x.jpg 2x"
+                        media="(min-width: 320px)">
+                        <img src="./images/portfolio_1/mob/banking_app_mob_1x.jpg" 
+                        alt="Banking applications" 
+                        width="396" height="280">
+                    </picture>
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                         Fruit Ecommerce App ·
                         Cloud Storage App </p>
@@ -72,7 +160,21 @@
         <li class="gallery link">
             <a class="gallery-card link" href="">
                 <div class="gallery-card-img-wrapper">
-                    <img src="./images/portfolio_1/cashless_payment.jpg" alt="Payment by phone" width="360" height="300">
+                    <picture>
+                        <source srcset="./images/portfolio_1/cashless_payment.jpg 1x, 
+                        ./images/portfolio_1/cashless_payment_2x.jpg 2x" 
+                        media="(min-width: 1200px)">
+                        <source srcset="./images/portfolio_1/tab/cashless_payment_tab_1x.jpg 1x, 
+                        ./images/portfolio_1/tab/cashless_payment_tab_2x.jpg"
+                            media="(min-width: 768px)">
+                            <source srcset="./images/portfolio_1/mob/cashless_payment_mob_1x.jpg 1x, 
+                            ./images/portfolio_1/mob/cashless_payment_mob_2x.jpg"
+                                media="(min-width: 320px)">
+                        <img src="./images/portfolio_1/mob/cashless_payment_mob_1x.jpg" 
+                        alt="Payment by phone" 
+                        width="396" height="280">
+                    </picture>
+                    
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                         Fruit Ecommerce App ·
                         Cloud Storage App </p>
@@ -86,7 +188,22 @@
         <li class="gallery link">
             <a class="gallery-card link" href="">
                 <div class="gallery-card-img-wrapper">
-                    <img src="./images/portfolio_1/meditation_app.jpg" alt="App on phone and computer" width="360" height="300">
+                    <picture>
+                        <source srcset="./images/portfolio_1/meditation_app.jpg 1x, 
+                        ./images/portfolio_1/meditation_app_2x.jpg 1x"
+                            media="(min-width: 1200px)">
+                        <source
+                            srcset="./images/portfolio_1/tab/meditation_app_tab-1x.jpg 1x, 
+                            ./images/portfolio_1/tab/meditation_app_tab-2x.jpg"
+                            media="(min-width: 768px)">
+                        <source
+                            srcset="./images/portfolio_1/mob/meditation_app_mob-1x.jpg 1x, 
+                            ./images/portfolio_1/mob/meditation_app_mob-1x.jpg 2x"
+                            media="(min-width: 320px)">
+                        <img src="./images/portfolio_1/mob/meditation_app_mob-1x.jpg" 
+                        alt="App on phone and computer" 
+                        width="396" height="280">
+                    </picture>
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                         Fruit Ecommerce App ·
                         Cloud Storage App </p>
@@ -182,7 +299,6 @@
             </a>
         </li>
     </ul>
-
    </div>
 </section>
 </main>

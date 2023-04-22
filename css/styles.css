@@ -171,6 +171,7 @@ justify-content: space-between;
 .page-header {
 padding-top: 24px;
 padding-bottom: 24px;
+border-bottom: 1px solid #E7E9FC;
 }
 
 @media screen and (min-width: 768px) {
@@ -1384,23 +1385,28 @@ color: #4D5AE5;
 /*============ /Modal form======== */
 /*========== Portfolio======*/
 .cards {
-padding-top: 96px;
-padding-bottom: 120px;
+padding-top: 48px;
+padding-bottom: 48px;
+/*padding-top: 100px;
+padding-bottom: 120px;*/
 }
 
 .filters {
 display: flex;
+flex-wrap: wrap;
 gap: 24px;
-margin-bottom: 72px;
-justify-content: center;
+margin-bottom: 48px;
+/*margin-bottom: 72px;*/
+justify-content: flex-start;
 }
 .gallery-list {
 display: flex;
 flex-wrap: wrap;
 gap: 48px 24px;
+justify-content: center;
 }
 .gallery {
-flex-basis: calc((100% - 144px) / 9);
+/*flex-basis: calc((100% - 144px) / 9);*/
 transition:box-shadow var(--transition-duration-and-func);
 }
 .gallery:hover {
@@ -1473,5 +1479,41 @@ background-color: #4D5AE5;;
 .gallery-card-img-wrapper:hover .overlay,
 .gallery-card-img-wrapper:focus .overlay {
 transform: translate(0,0);
+}
+@media screen and (min-width:768px) {
+.cards {
+        padding-top: 64px;
+        padding-bottom: 96px;
+
+    }
+.filters {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+.gallery-list {
+gap: 72px 24px;
+justify-content: flex-start;
+}
+.gallery {
+flex-basis: calc((100% - 24px) / 2);
+}
+}
+@media screen and (min-width:1200px) {
+.cards {
+padding-top: 100px;
+padding-bottom: 120px;
+}
+.filters {
+margin-bottom: 72px;
+}
+.gallery-list {
+gap: 48px 24px;
+justify-content: center;
+}
+.gallery {
+flex-basis: calc((100% - 48px) / 3);
+}
 }
 /*========== Portfolio======*/
